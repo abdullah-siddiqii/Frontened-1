@@ -7,7 +7,7 @@ import axios from 'axios'
 function App() {
 const [data,setdata]=useState([])
 useEffect(()=>{
-  axios.get('/api/data')
+  axios.get('https://abdullah-test.whitescastle.com/api/data')
   .then((response)=>{
     setdata(response.data)
   })
